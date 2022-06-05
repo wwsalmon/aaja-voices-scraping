@@ -2,10 +2,7 @@ from pyppeteer import launch
 from bs4 import BeautifulSoup
 import markdownify
 import pandas as pd
-
-
-def clean(s):
-    return " ".join(s.split())
+from clean import clean
 
 
 def get_dir_dict(director, coast):

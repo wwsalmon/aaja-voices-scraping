@@ -2,13 +2,10 @@ from pyppeteer import launch
 from bs4 import BeautifulSoup
 import markdownify
 import pandas as pd
+from clean import clean
 
 
 pd.set_option('display.max_columns', None)
-
-
-def clean(s):
-    return " ".join(s.split())
 
 
 async def get_all():
