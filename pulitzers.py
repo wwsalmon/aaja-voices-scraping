@@ -13,7 +13,7 @@ async def get_all():
 
     members = pd.DataFrame(columns=["name", "title", "organization", "board_years", "join_year", "description"])
 
-    start_year = 1972
+    start_year = 1917
 
     for i in range(2023 - start_year):
         year = start_year + i
